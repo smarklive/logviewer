@@ -21,7 +21,7 @@ public class RandomLogGenerator {
     boolean mIsLogging;
 
     public static interface LogListener {
-        void receiveLog(int logValue);
+        void addLog(int logValue);
     }
 
 
@@ -63,6 +63,6 @@ public class RandomLogGenerator {
     private void addLog() {
         int logValue = mRandom.nextInt(3) + 1;
         if (mLogListener != null)
-            mLogListener.receiveLog(logValue);
+            mLogListener.addLog(logValue);
     }
 }

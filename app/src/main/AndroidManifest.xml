@@ -15,6 +15,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!--TODO: specify Log details activity with up navigation to LoggingActivity  -->
+        <activity android:name=".LogDetailsActivity" android:parentActivityName=".LoggingActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LoggingActivity" />
+        </activity>
 
     </application>
 
