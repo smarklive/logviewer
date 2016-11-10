@@ -41,7 +41,7 @@ public class LoggingActivity extends AppCompatActivity implements RandomLogGener
     }
 
     @Override
-    public void addLog(final int logValue) {
+    public void receiveLog(final int logValue) {
         //TODO: make log entry appear on a list.
 
     }
