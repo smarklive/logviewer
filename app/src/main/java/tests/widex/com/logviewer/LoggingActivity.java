@@ -24,7 +24,7 @@ public class LoggingActivity extends AppCompatActivity implements RandomLogGener
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        
+
         mLogGenerator = new RandomLogGenerator();
         mLogGenerator.run();
         mLogGenerator.setLogListener(this);
