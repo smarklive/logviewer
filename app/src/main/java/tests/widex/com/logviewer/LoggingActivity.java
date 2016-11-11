@@ -18,16 +18,13 @@ public class LoggingActivity extends AppCompatActivity implements RandomLogGener
 
     private final String TAG = getClass().getSimpleName();
 
-    private Handler mHandler;
     private RandomLogGenerator mLogGenerator;
-    private ListView mListView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        mHandler = new Handler();
+        
         mLogGenerator = new RandomLogGenerator();
         mLogGenerator.run();
         mLogGenerator.setLogListener(this);
